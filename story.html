@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magic Candy Story</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background: #fffaf0;
+      color: #333;
+    }
+    header {
+      background: #ff6f61;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background: #ffb88c;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      padding: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      background: #ff6f61;
+    }
+    section {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    section img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 1rem;
+    }
+    footer {
+      background: #444;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+    @media (min-width: 768px) {
+      section {
+        padding: 4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Magic Candy: A Story About Sharing</h1>
+  </header>
+
+  <nav>
+    <a href="#scene1">Start</a>
+    <a href="#scene5">Middle</a>
+    <a href="#scene10">End</a>
+  </nav>
+
+  <main>
+    <section id="scene1">
+      <h2>Mario Loves Candy</h2>
+      <p>Mario is a little boy who loves sweets. His favorite? Candy!</p>
+      <img src="image1.jpg" alt="Mario loving candy">
+    </section>
+
+    <section id="scene2">
+      <h2>The Magical Jar</h2>
+      <p>Today, Mom gives Mario a magical-looking candy jar.</p>
+      <p>Mom says, “This is magic candy. You can have one piece a day!”</p>
+      <img src="image2.jpg" alt="Magic candy jar">
+    </section>
+
+    <section id="scene3">
+      <h2>First Taste</h2>
+      <p>Mario takes a bite. It’s the sweetest candy he’s ever had!</p>
+      <p>His eyes lit up. “Yum! This is amazing!”</p>
+      <img src="image3.jpg" alt="Mario eating candy">
+    </section>
+
+    <section id="scene4">
+      <h2>Ann Wants Some</h2>
+      <p>Ann sees the candy and asks, “Can I have one too?”</p>
+      <p>Mario frowns, “But... I only have one piece.”</p>
+      <img src="image4.jpg" alt="Ann asking Mario">
+    </section>
+
+    <section id="scene5">
+      <h2>Not So Happy</h2>
+      <p>He doesn’t feel as happy as he thought he would, even after eating the candy.</p>
+      <p>The candy was sweet, but something felt missing.</p>
+      <img src="image5.jpg" alt="Mario not happy">
+    </section>
+
+    <section id="scene6">
+      <h2>The Jar Speaks</h2>
+      <p>The jar suddenly speaks, “Sharing candy brings even more magic!”</p>
+      <p>Mario gasps, “Really?”</p>
+      <img src="image6.jpg" alt="Magic jar speaking">
+    </section>
+
+    <section id="scene7">
+      <h2>Sharing Time</h2>
+      <p>Mario breaks his candy in half and gives some to Ann.</p>
+      <p>Ann smiles, “Thank you, Mario!”</p>
+      <img src="image7.jpg" alt="Mario sharing candy">
+    </section>
+
+    <section id="scene8">
+      <h2>More Candy!</h2>
+      <p>Mario finds three new candies in the jar!</p>
+      <p>The magic was real!</p>
+      <img src="image8.jpg" alt="More magic candy">
+    </section>
+
+    <section id="scene9">
+      <h2>Fun Together</h2>
+      <p>Everyone is laughing, sharing, and having fun together.</p>
+      <p>Mario says, “Sharing feels even better than eating it all by myself!”</p>
+      <img src="image9.jpg" alt="Everyone having fun">
+    </section>
+
+    <section id="scene10">
+      <h2>Happy Ending</h2>
+      <p>The jar glows softly, as if saying goodnight.</p>
+      <p>From then on, one candy a day brought lots of joy and friendship.</p>
+      <img src="image10.jpg" alt="Glowing candy jar">
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Magic Candy Story. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Simple smooth scroll for navigation
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
